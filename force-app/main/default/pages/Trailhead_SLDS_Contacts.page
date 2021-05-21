@@ -1,0 +1,36 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+<div class="slds-col slds-no-flex slds-grid slds-align-top">
+  <div class="slds-button-group" role="group">
+    <button class="slds-button slds-button_neutral"> Add Contact </button>
+    <button class="slds-button slds-button_neutral"> More </button>
+  </div>
+</div>
+<div class="slds-page-header">
+  <div class="slds-grid">
+    <div class="slds-col slds-has-flexi-truncate">
+      <p class="slds-text-title_caps slds-line-height_reset">Contacts</p>
+      <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"  title="My Contacts">My Contacts</h1>
+    </div>
+  </div>
+  </div>
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Salesforce Lightning Design System Trailhead Module</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <apex:slds />
+    </head>
+    <apex:remoteObjects >
+    <apex:remoteObjectModel name="Contact" fields="Id,Name,Title,LastModifiedDate,PhotoUrl"/>
+    </apex:remoteObjects>
+    <body>
+      <div class="slds-scope">
+        <p class="slds-text-heading_label slds-m-bottom_small"> Salesforce Lightning Design System Visualforce Workshop </p>
+        <div class="myapp slds-p-horizontal_medium">
+          <ul id="contact-list" class="slds-has-dividers_bottom-space"></ul>
+        </div>
+      </div>
+    </body>
+  </html>
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page standardController="Position__c" sidebar="false" showheader="false">
+  <apex:form >
+   <apex:pageBlock title="Position details">
+    <apex:pageBlockSection title="Address details">
+    <apex:inputField value="{!Position__c.name}"/>
+    <apex:inputField value="{!Position__c.Close_Date__c}"/>
+    </apex:pageBlockSection>
+   </apex:pageBlock>
+  </apex:form>
+</apex:page>
