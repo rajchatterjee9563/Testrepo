@@ -1,0 +1,14 @@
+<apex:page controller="visualforcepagelabel">
+   <apex:form >
+    <apex:pageBlock >
+     <apex:pageBlockButtons >
+      <apex:commandButton Value="Submit" action="{!Submit}" disabled="false" reRender="formid"/>
+       value stored in custom label is: <b>{!Account}</b> 
+       value stored in custom label is: <b>{!Lead}</b>
+       <apex:repeat var="customAccount" value="{!customAccounts}">
+        <apex:inputText value="{!customAccount.accountName}"/>
+      </apex:repeat>
+    </apex:pageBlockButtons>
+   </apex:pageBlock>
+  </apex:form>
+</apex:page>

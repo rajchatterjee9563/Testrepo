@@ -1,0 +1,15 @@
+<apex:page sidebar="false">
+  <apex:form >
+   <apex:pageBlock title="GoToTravelCompany">
+     <apex:pageBlockButtons >
+      <apex:commandButton action="{!save}" value="save"/>
+     <apex:commandButton action="{!New}" value="New"/>
+     <apex:commandButton action="{!Edit}" value="Edit"/>
+     <apex:commandButton action="{!Submit}" value="Submit"/>
+    </apex:pageBlockButtons>
+    <apex:pageBlockSection title="customer details" >
+    
+   </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

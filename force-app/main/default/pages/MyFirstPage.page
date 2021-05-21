@@ -1,0 +1,21 @@
+<apex:page StandardController="Account" sidebar="false" showheader="false" >
+  <apex:form >
+    <apex:pageBlock title="Account Edit" >
+      <apex:pageBlockSection title="Account Information">
+       <apex:inputField value="{!account.name}"/>
+        <apex:inputField value="{!account.phone}"/>
+          <apex:inputField value="{!account.rating}"/>
+         </apex:pageBlockSection>
+           <apex:pageBlockSection title="Address Information">
+             <apex:inputField value="{!account.Billingcity}"/> 
+             <apex:inputField value="{!account.billingstreet}"/>
+             <apex:inputField value="{!account.billingcountry}"/>
+           </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+          <apex:commandButton Action="{!save}" Value="save"/>
+        <apex:commandButton Action="{!Edit}" Value="Edit"/>
+      <apex:commandButton Action="{!Cancel}" Value="Cancel"/>
+    </apex:pageBlockButtons>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>
